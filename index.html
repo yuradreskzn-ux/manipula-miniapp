@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f8f8f8" />
+    <title>MANIPULA — лазерная эпиляция</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="MANIPULA — главная"><span class="brand-mark">M</span><span>MANIPULA</span></a>
+        <button class="city-button" id="cityButton" type="button"><span>КАЗАНЬ</span><i>⌄</i></button>
+      </header>
+      <main id="home">
+        <section class="hero section">
+          <p class="kicker">СТУДИЯ ЛАЗЕРНОЙ ЭПИЛЯЦИИ</p>
+          <h1>Свобода<br />быть <em>собой.</em></h1>
+          <p class="hero-lead">Деликатная эпиляция и аппаратный массаж в студиях MANIPULA.</p>
+          <div class="hero-actions"><button class="button button-dark" data-book type="button">Записаться <span>↗</span></button><button class="button button-ghost" data-scroll="services" type="button">Услуги</button></div>
+          <article class="first-visit-card">
+            <div class="first-visit-photo"><img src="./assets/brand/visit-procedure.jpg" alt="Процедура лазерной эпиляции в студии MANIPULA" /></div>
+            <div class="first-visit-copy"><span class="card-overline">ПЕРВЫЙ ВИЗИТ</span><h2>Начнём<br />с заботы</h2><p>Расскажем о подготовке и подберём зоны.</p><button data-book type="button" aria-label="Записаться на первый визит">↗</button></div>
+          </article>
+        </section>
+        <section class="section intro-links" aria-label="Главные разделы">
+          <button class="intro-link" data-scroll="services" type="button"><span>01</span><b>Выбрать<br />процедуру</b><i>↘</i></button>
+          <button class="intro-link" data-scroll="benefits" type="button"><span>02</span><b>Узнать<br />о студии</b><i>↘</i></button>
+          <button class="intro-link" data-scroll="locations" type="button"><span>03</span><b>Выбрать<br />студию</b><i>↘</i></button>
+        </section>
+        <section class="section signature-offer">
+          <div class="offer-copy"><span class="card-overline">КОМПЛЕКС ДЛЯ ТЕХ, КТО ЦЕНИТ ВРЕМЯ</span><h2>Всё тело<br /><em>6 666 ₽</em></h2><p>Один визит — и все нужные зоны уже в записи.</p><button class="underlined" data-book type="button">Выбрать комплекс <span>→</span></button></div>
+          <img src="./assets/brand/device.jpg" alt="Аппарат для лазерной эпиляции MANIPULA" />
+        </section>
+        <section class="services section" id="services">
+          <div class="heading-row"><div><p class="kicker">УСЛУГИ И ЦЕНЫ</p><h2>Выберите<br />своё</h2></div><span class="section-count">01 / 02</span></div>
+          <div class="service-tabs" role="tablist"><button class="service-tab active" data-category="laser" type="button">Лазерная эпиляция</button><button class="service-tab" data-category="massage" type="button">Массаж</button></div>
+          <div class="service-list" id="serviceList"></div><button class="show-all" data-book type="button">Посмотреть все услуги <span>↗</span></button>
+        </section>
+        <section class="section visual-statement" id="benefits">
+          <img src="./assets/brand/procedure.jpg" alt="Процедура лазерной эпиляции в студии MANIPULA" />
+          <div class="statement-card"><span class="card-overline">MANIPULA — ЭТО</span><h2>Красота<br />без спешки</h2><p>Комфортная температура в кабинете, музыка на ваш вкус, консультация и внимание к мелочам.</p></div>
+        </section>
+        <section class="benefits section">
+          <article><span>01</span><h3>Понятный<br />план курса</h3><p>Объясняем, чего ожидать от процедуры.</p></article>
+          <article><span>02</span><h3>Кофе,<br />музыка, уют</h3><p>Время в студии остаётся приятной частью вашего дня.</p></article>
+          <article><span>03</span><h3>Бонусы<br />для своих</h3><p>Клубная карта с 5% кешбэка и скидка в день рождения.</p></article>
+        </section>
+        <section class="section club-banner"><div class="club-brand"><span>MANIPULA</span><b>5<small>%</small></b><em>CLUB</em></div><div><p class="kicker">КЛУБНАЯ КАРТА</p><h2>Больше<br />приятного</h2><p>Кешбэк 5% на услуги и особые условия для постоянных гостей.</p></div></section>
+        <section class="locations section" id="locations">
+          <div class="heading-row"><div><p class="kicker">МЫ РЯДОМ</p><h2>Три студии<br />в Казани</h2></div></div>
+          <div class="location-list">
+            <button class="location-card selected" data-location="Пушкина, 17" type="button"><span>01</span><div><b>На Пушкина</b><small>ул. Пушкина, 17 · офис 309</small></div><i>↗</i></button>
+            <button class="location-card" data-location="Ямашева, 45А" type="button"><span>02</span><div><b>На Ямашева</b><small>просп. Ямашева, 45А · каб. 511</small></div><i>↗</i></button>
+            <button class="location-card" data-location="Габишева, 2" type="button"><span>03</span><div><b>На Габишева</b><small>ул. Комиссара Габишева, 2 · офис 301</small></div><i>↗</i></button>
+          </div>
+        </section>
+        <section class="final-cta section"><span class="kicker">ВАШЕ ВРЕМЯ ДЛЯ СЕБЯ</span><h2>До встречи<br /><em>в MANIPULA</em></h2><p>Ежедневно с 09:00 до 21:00</p><button class="button button-light" data-book type="button">Выбрать дату и время <span>↗</span></button></section>
+      </main>
+      <nav class="bottom-nav" aria-label="Навигация"><a class="nav-item active" href="#home"><i>⌂</i><span>Главная</span></a><button class="nav-item" data-scroll="services" type="button"><i>✦</i><span>Услуги</span></button><button class="book-nav" data-book type="button" aria-label="Записаться">+</button><button class="nav-item" data-scroll="locations" type="button"><i>⌖</i><span>Студии</span></button><a class="nav-item" href="https://t.me/laser_kzn" target="_blank"><i>◌</i><span>Мы в TG</span></a></nav>
+    </div>
+    <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+    <section class="booking-sheet" id="bookingSheet" aria-modal="true" aria-label="Запись на процедуру" role="dialog" hidden><div class="sheet-handle"></div><button class="sheet-close" id="closeSheet" type="button" aria-label="Закрыть">×</button><p class="kicker">ОНЛАЙН-ЗАПИСЬ</p><h2>Выберите<br />удобное время</h2><p class="sheet-text">В форме YCLIENTS можно выбрать услугу, мастера и время посещения.</p><div class="selected-studio"><i>⌖</i><div><small>ВЫБРАННАЯ СТУДИЯ</small><b id="selectedStudioText">Пушкина, 17</b></div><button id="changeStudio" type="button">Изменить</button></div><button class="button button-dark full" id="openYclients" type="button">Перейти к записи <span>↗</span></button><p class="sheet-note">Ежедневно · 09:00 — 21:00</p></section>
+    <div class="city-popover" id="cityPopover" hidden><p>Студии MANIPULA работают в Казани.</p><button type="button" id="closeCity">Понятно</button></div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script><script src="./app.js"></script>
+  </body>
+</html>
